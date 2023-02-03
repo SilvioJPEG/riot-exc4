@@ -11,8 +11,8 @@
 #define BUTTON3_CODE 2
 #define BUTTON4_CODE 3
 
-uint8_t currentKeylength = 0; // Счетчик нажатий
-uint8_t currentInput = 0; // Буфер последовтельности нажатий
+volatile uint8_t currentKeylength = 0; // Счетчик нажатий
+volatile uint8_t currentInput = 0; // Буфер последовтельности нажатий
 
 int main() {
     gpio_init(PA_0, GPIO_IN);
